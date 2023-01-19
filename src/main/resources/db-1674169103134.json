@@ -1,0 +1,44 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "name": "Ronin",
+      "location": "india",
+      "phone:": "12312312",
+      "courses": [
+        "Java",
+        "selenium"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Serbar",
+      "location": "France",
+      "phone:": "12312312",
+      "courses": [
+        "JS",
+        "Cypress"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Mon",
+      "location": "Barrancabermeja",
+      "phone:": "12312312",
+      "courses": [
+        "Python",
+        "Pytest"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Me",
+      "location": "Dinamarca",
+      "phone:": "12312312",
+      "courses": [
+        "C",
+        "C++"
+      ]
+    }
+  ]
+}
