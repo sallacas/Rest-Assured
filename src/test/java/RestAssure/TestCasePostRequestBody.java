@@ -12,17 +12,17 @@ import java.util.HashMap;
 
 import java.io.FileNotFoundException;
 
-public class PostRequestBody {
+public class TestCasePostRequestBody {
 
     //@Test(priority = 1) - Test using HashMap for data
     void testPostUsingHashMap(){
-        HashMap data = new HashMap();
+        HashMap<String,String> data = new HashMap<>();
         data.put("name","Thiago");
         data.put("location","spain");
         data.put("phone","31123145");
 
-        String[] courses = {"C++","Java"};
-        data.put("courses",courses);
+        //String[] courses = {"C++","Java"};
+        //data.put("courses",courses);
 
         given()
                 .contentType("application/json")
@@ -34,8 +34,8 @@ public class PostRequestBody {
                 .body("name", equalTo(data.get("name")))
                 .body("location", equalTo(data.get("location")))
                 .body("phone", equalTo(data.get("phone")))
-                .body("courses[0]", equalTo(courses[0]))
-                .body("courses[1]", equalTo(courses[1]))
+                //.body("courses[0]", equalTo(courses[0]))
+                //.body("courses[1]", equalTo(courses[1]))
                 .log().all();
     }
 
